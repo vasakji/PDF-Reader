@@ -1,0 +1,27 @@
+﻿<Window x:Class="GUIseminarka.download"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUIseminarka"
+        mc:Ignorable="d"
+        Title="download" Height="326.667" Width="652.636" Closed="Window_Closed">
+    <Grid RenderTransformOrigin="0.5,0.5" Height="289" VerticalAlignment="Top">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.124"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <TextBox x:Name="insertdata" HorizontalAlignment="Left" Height="37" Margin="23,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321"/>
+        <TextBox x:Name="filename" HorizontalAlignment="Left" Height="37" Margin="349,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <Button x:Name="stahujdata" Content="Download" HorizontalAlignment="Left" Height="37" Margin="524,10,0,0" VerticalAlignment="Top" Width="109" Click="stahujdata_Click"/>
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="214" Margin="23,63,0,0" VerticalAlignment="Top" Width="412"/>
+        <Button x:Name="_default" Content="Default Data" HorizontalAlignment="Left" Height="37" Margin="524,52,0,0" VerticalAlignment="Top" Width="109" Click="_default_Click"/>
+        <Button x:Name="selectAll" Content="Select All" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Margin="524,94,0,0" Height="37" Click="SelectAll_Click"/>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="524,136,0,0" VerticalAlignment="Top" Width="109" Height="37" Click="Button_Click"/>
+
+    </Grid>
+</Window>
